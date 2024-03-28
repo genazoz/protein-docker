@@ -10,6 +10,6 @@ RUN npm install
 
 COPY . /srv/app/next-protein-backend
 
-#COPY ./dist /srv/app/next-protein-backend/dist
+COPY ./dist /srv/app/next-protein-backend/dist
 
 CMD ["npm", "run", "start:dev"]
