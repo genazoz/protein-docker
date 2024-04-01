@@ -33,7 +33,7 @@ services:
       - .:/app
     ports:
       - "5000:5000"
-    command: npm run start:dev
+    command: npm run start
     depends_on:
       - postgres
     restart: always
