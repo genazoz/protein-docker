@@ -9,6 +9,8 @@ services:
       - ./:/app
     expose:
       - "5000"
+    networks:
+      - app-network
 
   nginx:
     image: nginx:latest
@@ -66,3 +68,6 @@ services:
     ports:
       - 8080:8080
 
+networks:
+  app-network:
+    driver: bridge
